@@ -10,10 +10,37 @@ namespace tael\Tests;
 
 use tael\component\Test;
 
-class UsingTest {
+class UsingTest
+{
+    private $str;
 
-    public static function testEchoLibrary(){
+    public static function testEchoLibrary()
+    {
         echo Test::echoA();
+    }
+
+    /**
+     * @return static
+     */
+    public static function create()
+    {
+        return new static;
+    }
+
+    /**
+     * @param mixed $str
+     * @return $this
+     */
+    public function setStr($str)
+    {
+        $this->str = $str;
+
+        return $this;
+    }
+
+    public function getEchoString()
+    {
+        return Test::echoA()."[using echoA] Hello, $this->str";
     }
 
 }

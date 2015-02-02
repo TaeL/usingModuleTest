@@ -1,7 +1,6 @@
 {
   "name": "tael/usingModuleTest",
   "description": "description_text",
-  "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
@@ -10,12 +9,17 @@
     }
   ],
   "require": {
-    "TaeL/moduleTest": "*@dev"
+    "TaeL/moduleTest": "*@dev",
+    "tael/watcher": "*@dev"
   },
   "repositories": [
     {
       "type": "vcs",
       "url": "https://github.com/TaeL/moduleTest.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/TaeL/watcher.git"
     }
   ],
   "autoload": {
