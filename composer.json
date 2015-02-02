@@ -10,5 +10,17 @@
     }
   ],
   "require": {
+    "TaeL/moduleTest": "*@dev"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/TaeL/moduleTest.git"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "tael\\Tests\\": ["src/"]
+    }
   }
 }
